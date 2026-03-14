@@ -1,0 +1,185 @@
+:root {
+  --bg: #f7f4ee;
+  --text: #171717;
+  --muted: #55514c;
+  --line: #d8d0c4;
+  --teal: #2f9ea2;
+  --amber: #c98917;
+  --max: 720px;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f1115;
+  --text: #ece7dd;
+  --muted: #b7afa1;
+  --line: #2b3038;
+  --teal: #4bb8bd;
+  --amber: #d59a2d;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+html, body {
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+a:hover {
+  color: #000;
+}
+
+:root[data-theme="dark"] a:hover {
+  color: #fff;
+}
+
+.wrap {
+  width: min(calc(100% - 2rem), var(--max));
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+nav {
+  font-size: 0.98rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+
+.theme-toggle {
+  font: inherit;
+  font-size: 0.96rem;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 7vw, 4rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.28rem;
+  margin-bottom: 0.7rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  max-width: 70ch;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.hero-logo {
+  margin: 1.2rem 0 1.4rem;
+  max-width: 100%;
+}
+
+.hero-logo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: var(--text);
+}
+
+main section {
+  margin-bottom: 2rem;
+  padding-top: 0.2rem;
+}
+
+ul {
+  margin: 0.4rem 0 1rem 1.15rem;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
+.small {
+  font-size: 0.96rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2rem 0;
+}
+
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    width: min(calc(100% - 1.2rem), var(--max));
+    padding-top: 1.5rem;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.8rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-right: 0.75rem;
+    margin-bottom: 0.45rem;
+  }
+}
