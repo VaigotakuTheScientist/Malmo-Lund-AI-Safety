@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malmö Lund AI Safety</title>
+  <meta
+    name="description"
+    content="Malmö Lund AI Safety is a community in Skåne for discussing AI safety, alignment, governance, technical challenges, and the societal impacts of advanced AI."
+  />
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --text: #171717;
+      --muted: #55514c;
+      --line: #d8d0c4;
+      --teal: #2f9ea2;
+      --amber: #c98917;
+      --max: 720px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    a:hover {
+      color: #000;
+    }
+
+    .wrap {
+      width: min(calc(100% - 2rem), var(--max));
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+    }
+
+    nav {
+      margin-bottom: 2.5rem;
+      font-size: 0.98rem;
+    }
+
+    nav a {
+      margin-right: 1rem;
+      white-space: nowrap;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.28rem;
+      margin-bottom: 0.7rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+      max-width: 70ch;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .hero-logo {
+      margin: 1.2rem 0 1.4rem;
+      max-width: 100%;
+    }
+
+    .hero-logo svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    main section {
+      margin-bottom: 2rem;
+      padding-top: 0.2rem;
+    }
+
+    ul {
+      margin: 0.4rem 0 1rem 1.15rem;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.45rem;
+    }
+
+    .small {
+      font-size: 0.96rem;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 2rem 0;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      .wrap {
+        width: min(calc(100% - 1.2rem), var(--max));
+        padding-top: 1.5rem;
+      }
+
+      nav {
+        margin-bottom: 1.8rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin-right: 0.75rem;
+        margin-bottom: 0.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#organizer">Organizer</a>
+        <a href="#links">Links</a>
+      </nav>
+
+      <h1>Malmö Lund AI Safety</h1>
+
+      <p>
+        A community in Skåne for discussing AI safety, alignment, governance, technical challenges,
+        and the societal impacts of advanced AI.
+      </p>
+
+      <div class="hero-logo" aria-label="Malmö Lund AI Safety logo">
+        <svg viewBox="0 0 700 250" role="img" aria-labelledby="logoTitle logoDesc">
+          <title id="logoTitle">Malmö Lund AI Safety logo</title>
+          <desc id="logoDesc">Minimal skyline with Malmö Turning Torso on the left, Lund Cathedral on the right, and the words Malmö Lund AI Safety in the middle.</desc>
+          <defs>
+            <linearGradient id="skyline" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#2f9ea2"/>
+              <stop offset="100%" stop-color="#c98917"/>
+            </linearGradient>
+          </defs>
+
+          <path d="M35 188 C 140 145, 450 135, 665 178" fill="none" stroke="url(#skyline)" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="382" cy="156" r="6" fill="#d7b46a"/>
+
+          <g transform="translate(80,62)" stroke="#2f9ea2" fill="none" stroke-width="5" stroke-linecap="round">
+            <path d="M14 108 L 27 8 L 72 15 L 62 94"/>
+            <path d="M31 18 L 21 108"/>
+            <path d="M66 16 L 56 92"/>
+            <path d="M25 39 L 67 42"/>
+            <path d="M23 61 L 64 64"/>
+            <path d="M20 82 L 60 85"/>
+          </g>
+
+          <g transform="translate(560,72)" stroke="#c98917" fill="none" stroke-width="5" stroke-linecap="round">
+            <path d="M0 98 L 0 30 L 22 0 L 44 30 L 44 98"/>
+            <path d="M58 98 L 58 38 L 79 10 L 101 38 L 101 98"/>
+            <path d="M44 98 L 62 79 L 79 93 L 79 98"/>
+            <path d="M22 -10 L 22 0"/>
+            <path d="M15 -4 L 29 -4"/>
+            <path d="M79 2 L 79 10"/>
+            <path d="M71 6 L 87 6"/>
+          </g>
+
+          <text x="350" y="106" text-anchor="middle" font-size="22" font-weight="700" fill="#171717" letter-spacing="0.5">MALMÖ • LUND</text>
+          <text x="350" y="152" text-anchor="middle" font-size="44" font-weight="700" fill="#171717">AI SAFETY</text>
+        </svg>
+      </div>
+
+      <p class="muted small">
+        Malmö AI Safety, Lund AI Safety, and Skåne AI Safety all live under the same roof here.
+      </p>
+
+      <p class="small">
+        This site is intentionally simple: one page, static HTML, static CSS, no framework, no tracking circus.
+      </p>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Malmö Lund AI Safety is a local community for people who want a serious, grounded conversation about advanced AI:
+          how it may affect society, science, labor, institutions, power, security, and human wellbeing, plus what can be done
+          to steer development in safer and more beneficial directions.
+        </p>
+        <p>
+          The group is open to students, researchers, engineers, founders, policy-curious people, writers, and anyone in southern Sweden
+          who wants something more thoughtful than either hype or doomposting.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="events">
+        <h2>Events</h2>
+        <p>
+          We host local meetups in Malmö, Lund, and nearby. The aim is simple: discuss AI safety, meet thoughtful people in the region,
+          and build a serious community in Skåne.
+        </p>
+        <ul>
+          <li><strong>Upcoming:</strong> Kickoff meetup</li>
+          <li><a href="https://www.meetup.com/" target="_blank" rel="noreferrer">Meetup</a></li>
+          <li><a href="https://lu.ma/" target="_blank" rel="noreferrer">Luma</a></li>
+          <li><a href="https://calendar.google.com/" target="_blank" rel="noreferrer">Calendar</a></li>
+        </ul>
+        <p class="muted small">
+          Version one stays simple on purpose. Events live on the platforms that already handle them well.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="organizer">
+        <h2>Organizer</h2>
+        <p>
+          Organized by <strong>Vadym Sulzhenko</strong>, a student and community builder interested in AI safety, alignment,
+          governance, and the long-term impacts of advanced AI.
+        </p>
+        <p>
+          This community started as an attempt to create a local home for thoughtful discussion and field-building in southern Sweden.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="links">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://www.meetup.com/" target="_blank" rel="noreferrer">Meetup</a></li>
+          <li><a href="https://lu.ma/" target="_blank" rel="noreferrer">Luma</a></li>
+          <li><a href="https://discord.com/" target="_blank" rel="noreferrer">Discord</a></li>
+          <li><a href="https://www.lesswrong.com/" target="_blank" rel="noreferrer">LessWrong</a></li>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div>Malmö Lund AI Safety</div>
+      <div>Built as a small static website: HTML and CSS only.</div>
+    </footer>
+  </div>
+</body>
+</html>
