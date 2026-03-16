@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#161225"/>
+<stop offset="100%" stop-color="#1b1727"/>
+</linearGradient>
+
+<linearGradient id="arc" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#29c6e8"/>
+<stop offset="50%" stop-color="#b7ef8c"/>
+<stop offset="75%" stop-color="#ffd84d"/>
+<stop offset="100%" stop-color="#f5a12d"/>
+</linearGradient>
+
+<linearGradient id="tower" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#2cc5e8"/>
+<stop offset="100%" stop-color="#b7ef8c"/>
+</linearGradient>
+
+<style>
+.txt{fill:#f1eee6;font-family:Arial, Helvetica, sans-serif;font-weight:700}
+</style>
+</defs>
+
+<rect width="1024" height="1024" fill="url(#bg)"/>
+
+<!-- Turning Torso style tower -->
+<g stroke="url(#tower)" stroke-width="8" fill="none" transform="translate(200,320)">
+<path d="M0 300 L60 0 L140 20 L100 280 Z"/>
+<line x1="20" y1="60" x2="120" y2="80"/>
+<line x1="10" y1="120" x2="110" y2="140"/>
+<line x1="5" y1="180" x2="105" y2="200"/>
+<line x1="0" y1="240" x2="95" y2="260"/>
+</g>
+
+<!-- Text -->
+<text class="txt" x="620" y="420" font-size="70" text-anchor="middle">MALMÖ</text>
+<text class="txt" x="620" y="520" font-size="110" text-anchor="middle">AI SAFETY</text>
+
+<!-- Gradient arc -->
+<path d="M120 650 C 350 540 650 540 900 640" stroke="url(#arc)" stroke-width="8" fill="none"/>
+<path d="M140 665 C 400 580 680 580 880 660" stroke="url(#arc)" stroke-width="4" fill="none"/>
+
+<!-- glowing nodes -->
+<circle cx="520" cy="590" r="10" fill="#fff3a6"/>
+<circle cx="780" cy="620" r="8" fill="#f3a43a"/>
+
+</svg>
